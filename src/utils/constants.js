@@ -1,0 +1,2 @@
+export const NAV_LOGO_URL="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNgAFJ1EjzXyQXd9mTFCfyJsb42nT1AwNRMg&s";
+export const HEADER_IMG="https://static.toiimg.com/photo/msid-66440799,width-96,height-65.cms";
