@@ -86,6 +86,9 @@ const BookJourney = () => {
                       localStorage.setItem("tn_bookings", JSON.stringify(next));
                       window.dispatchEvent(new Event("tn_bookings_updated"));
                       window.dispatchEvent(new CustomEvent("tn_toast", { detail: { message: "Saved to My bookings" } }));
+                      if (window.innerWidth < 640) {
+                        setTimeout(() => navigate("/bookings"), 300);
+                      }
                     } catch {}
                   }}
                   className="w-full sm:w-auto inline-flex justify-center items-center rounded-xl bg-white text-gray-700 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 px-5 py-3 font-medium"

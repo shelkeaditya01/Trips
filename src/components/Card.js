@@ -18,6 +18,9 @@ const Card = ({ placeIn }) => {
       localStorage.setItem("tn_bookings", JSON.stringify(next));
       window.dispatchEvent(new Event("tn_bookings_updated"));
       window.dispatchEvent(new CustomEvent("tn_toast", { detail: { message: "Saved to My bookings" } }));
+      if (window.innerWidth < 640) {
+        setTimeout(() => navigate("/bookings"), 300);
+      }
     } catch {}
   };
 
