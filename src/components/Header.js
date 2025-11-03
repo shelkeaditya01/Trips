@@ -101,6 +101,9 @@ const Header = () =>{
                                 <NavLink onClick={() => setIsMobileOpen(false)} to="/contact" className={({ isActive }) => `block px-2 py-2 rounded-lg ${isActive ? "bg-emerald-100 text-emerald-800" : "hover:bg-emerald-50 hover:text-emerald-700"}`}>Contact</NavLink>
                             </li>
                             <li>
+                                <NavLink onClick={() => setIsMobileOpen(false)} to="/bookings" className={({ isActive }) => `block px-2 py-2 rounded-lg ${isActive ? "bg-emerald-100 text-emerald-800" : "hover:bg-emerald-50 hover:text-emerald-700"}`}>My bookings</NavLink>
+                            </li>
+                            <li>
                                 <button onClick={()=>
                                 {
                                     if(loginBtn==="Login"){
